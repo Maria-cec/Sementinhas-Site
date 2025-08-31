@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sementinhas de Fé - Ministério Infantil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Fredoka', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .bible-verse {
+            background: linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%);
+        }
+        
+        .activity-card {
+            background: linear-gradient(45deg, #a8edea 0%, #fed6e3 100%);
+        }
+        
+        .story-card {
+            background: linear-gradient(45deg, #d299c2 0%, #fef9d7 100%);
+        }
+        
+        .resource-card {
+            background: linear-gradient(45deg, #89f7fe 0%, #66a6ff 100%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-pink-50 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="text-4xl">🌱</div>
+                    <div>
+                        <h1 class="text-3xl font-bold">Sementinhas de Fé</h1>
+                        <p class="text-purple-100">Recursos para o Ministério Infantil</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#inicio" class="hover:text-purple-200 transition-colors">Início</a>
+                    <a href="#atividades" class="hover:text-purple-200 transition-colors">Atividades</a>
+                    <a href="#historias" class="hover:text-purple-200 transition-colors">Histórias</a>
+                    <a href="#recursos" class="hover:text-purple-200 transition-colors">Recursos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="bible-verse rounded-2xl p-8 mb-12 max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-purple-800 mb-4">
+                    "Instrui a criança no caminho em que deve andar"
+                </h2>
+                <p class="text-xl text-purple-600">Provérbios 22:6</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Atividades Card -->
+                <div class="activity-card rounded-2xl p-8 card-hover cursor-pointer" onclick="scrollToSection('atividades')">
+                    <div class="text-6xl mb-4">🎨</div>
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">Atividades</h3>
+                    <p class="text-purple-700">Jogos, brincadeiras e atividades criativas para ensinar de forma divertida</p>
+                </div>
+                
+                <!-- Histórias Card -->
+                <div class="story-card rounded-2xl p-8 card-hover cursor-pointer" onclick="scrollToSection('historias')">
+                    <div class="text-6xl mb-4">📖</div>
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">Histórias</h3>
+                    <p class="text-purple-700">Histórias bíblicas adaptadas para crianças com linguagem simples</p>
+                </div>
+                
+                <!-- Recursos Card -->
+                <div class="resource-card rounded-2xl p-8 card-hover cursor-pointer" onclick="scrollToSection('recursos')">
+                    <div class="text-6xl mb-4">📚</div>
+                    <h3 class="text-2xl font-bold text-purple-800 mb-3">Recursos</h3>
+                    <p class="text-purple-700">Materiais para download, planos de aula e dicas pedagógicas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atividades Section -->
+    <section id="atividades" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">🎨 Atividades Criativas</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-2xl p-6 card-hover">
+                    <div class="text-4xl mb-4">✂️</div>
+                    <h3 class="text-xl font-bold text-purple-800 mb-3">Arca de Noé - Recorte e Cole</h3>
+                    <p class="text-gray-700 mb-4">Atividade para criar a arca com animais em duplas</p>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                        Ver Atividade
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-100 to-blue-100 rounded-2xl p-6 card-hover">
+                    <div class="text-4xl mb-4">🎭</div>
+                    <h3 class="text-xl font-bold text-purple-800 mb-3">Teatro de Fantoches</h3>
+                    <p class="text-gray-700 mb-4">Roteiros e moldes para apresentações bíblicas</p>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                        Ver Atividade
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl p-6 card-hover">
+                    <div class="text-4xl mb-4">🎵</div>
+                    <h3 class="text-xl font-bold text-purple-800 mb-3">Músicas e Coreografias</h3>
+                    <p class="text-gray-700 mb-4">Canções bíblicas com movimentos para memorização</p>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                        Ver Atividade
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-red-100 to-pink-100 rounded-2xl p-6 card-hover">
+                    <div class="text-4xl mb-4">🧩</div>
+                    <h3 class="text-xl font-bold text-purple-800 mb-3">Quebra-cabeças Bíblicos</h3>
+                    <p class="text-gray-700 mb-4">Puzzles com cenas e versículos para colorir</p>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                        Ver Atividade
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-100 to-purple-100 rounded-2xl p-6 card-hover">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-bold text-purple-800 mb-3">Desenhos para Colorir</h3>
+                    <p class="text-gray-700 mb-4">Ilustrações bíblicas para desenvolver criatividade</p>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                        Ver Atividade
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-teal-100 to-green-100 rounded-2xl p-6 card-hover">
+                    <div class="text-4xl mb-4">🏆</div>
+                    <h3 class="text-xl font-bold text-purple-800 mb-3">Jogos Educativos</h3>
+                    <p class="text-gray-700 mb-4">Brincadeiras que ensinam valores cristãos</p>
+                    <button class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                        Ver Atividade
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Histórias Section -->
+    <section id="historias" class="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">📖 Histórias Bíblicas</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="text-5xl mr-4">🌈</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-purple-800">Noé e o Arco-íris</h3>
+                            <p class="text-purple-600">Antigo Testamento</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        Uma história sobre obediência, fé e as promessas de Deus. Noé construiu uma grande arca para salvar sua família e os animais do dilúvio...
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-purple-600">⏱️ 15 minutos</span>
+                        <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                            Ler História
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="text-5xl mr-4">⭐</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-purple-800">O Nascimento de Jesus</h3>
+                            <p class="text-purple-600">Novo Testamento</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        A história mais linda de todas! Como Jesus nasceu em Belém e trouxe esperança ao mundo. Os pastores, os anjos e a estrela...
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-purple-600">⏱️ 12 minutos</span>
+                        <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                            Ler História
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="text-5xl mr-4">🦁</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-purple-800">Daniel na Cova dos Leões</h3>
+                            <p class="text-purple-600">Antigo Testamento</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        Uma história de coragem e fé! Daniel continuou orando mesmo quando foi proibido, e Deus o protegeu dos leões famintos...
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-purple-600">⏱️ 18 minutos</span>
+                        <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                            Ler História
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="text-5xl mr-4">🍞</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-purple-800">Jesus Alimenta 5000</h3>
+                            <p class="text-purple-600">Novo Testamento</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        O milagre da multiplicação! Com apenas 5 pães e 2 peixes, Jesus alimentou uma multidão inteira. Uma lição sobre generosidade...
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-purple-600">⏱️ 14 minutos</span>
+                        <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                            Ler História
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos Section -->
+    <section id="recursos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">📚 Recursos para Download</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl p-6 text-center card-hover">
+                    <div class="text-4xl mb-4">📋</div>
+                    <h3 class="text-lg font-bold text-purple-800 mb-2">Planos de Aula</h3>
+                    <p class="text-sm text-gray-600 mb-4">Roteiros completos para 52 semanas</p>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition-colors">
+                        Download PDF
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-100 to-teal-100 rounded-xl p-6 text-center card-hover">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-lg font-bold text-purple-800 mb-2">Moldes e Desenhos</h3>
+                    <p class="text-sm text-gray-600 mb-4">Materiais para artesanato</p>
+                    <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition-colors">
+                        Download ZIP
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-yellow-100 to-orange-100 rounded-xl p-6 text-center card-hover">
+                    <div class="text-4xl mb-4">🎵</div>
+                    <h3 class="text-lg font-bold text-purple-800 mb-2">Músicas Infantis</h3>
+                    <p class="text-sm text-gray-600 mb-4">Letras e partituras simples</p>
+                    <button class="bg-yellow-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-yellow-700 transition-colors">
+                        Download PDF
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl p-6 text-center card-hover">
+                    <div class="text-4xl mb-4">📖</div>
+                    <h3 class="text-lg font-bold text-purple-800 mb-2">Versículos Ilustrados</h3>
+                    <p class="text-sm text-gray-600 mb-4">Cards para memorização</p>
+                    <button class="bg-pink-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-pink-700 transition-colors">
+                        Download PDF
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Dicas para Professoras -->
+            <div class="mt-16 max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold text-purple-800 mb-6 text-center">💡 Dicas para Professoras</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-bold text-purple-700 mb-2">🎯 Mantenha o Foco</h4>
+                            <p class="text-sm text-gray-700">Use atividades de 10-15 minutos para manter a atenção das crianças</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-bold text-purple-700 mb-2">🤝 Participação Ativa</h4>
+                            <p class="text-sm text-gray-700">Faça perguntas e incentive as crianças a participarem da história</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-bold text-purple-700 mb-2">🎨 Use Recursos Visuais</h4>
+                            <p class="text-sm text-gray-700">Desenhos, objetos e gestos ajudam na compreensão</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-bold text-purple-700 mb-2">❤️ Demonstre Amor</h4>
+                            <p class="text-sm text-gray-700">O amor de Cristo deve ser sentido em cada aula</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center mb-6">
+                <div class="text-4xl mr-3">🌱</div>
+                <h3 class="text-2xl font-bold">Sementinhas de Fé</h3>
+            </div>
+            <p class="text-purple-100 mb-6">
+                "E disse: Deixai vir os pequeninos a mim e não os impeçais, porque dos tais é o Reino de Deus." - Lucas 18:16
+            </p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-purple-200 hover:text-white transition-colors">📧 Contato</a>
+                <a href="#" class="text-purple-200 hover:text-white transition-colors">📱 WhatsApp</a>
+                <a href="#" class="text-purple-200 hover:text-white transition-colors">📘 Facebook</a>
+            </div>
+            <p class="text-purple-200 text-sm">
+                © 2024 Sementinhas de Fé - Ministério Infantil. Feito com ❤️ para as crianças de Deus.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth scroll para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animação de entrada para cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Aplicar animação aos cards
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'974319b0b20cdecb',t:'MTc1NjA0MTEzNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
