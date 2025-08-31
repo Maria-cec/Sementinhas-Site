@@ -2,6 +2,9 @@ backend:
   name: github
   repo: Maria-cec/Sementinhas-Site
   branch: main
+  auth_scope: "repo"
+  auth_token: "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"
+
 
 media_folder: "content/media"
 public_folder: "/content/media"
