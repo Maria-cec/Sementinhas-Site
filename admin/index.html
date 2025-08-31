@@ -3,20 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Sementinhas de Fé - CMS</title>
-  <!-- Versão estável do Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@^2.15.57/dist/netlify-cms.js"></script>
 </head>
 <body>
-  <!-- Contêiner obrigatório -->
   <div id="nc-root"></div>
 
-  <script>
-    // Aguarda o DOM carregar antes de inicializar
-    document.addEventListener("DOMContentLoaded", function() {
-      CMS.init({
-        config: 'config.yml'
-      });
-    });
-  </script>
+  <!-- Netlify CMS script -->
+  <script src="https://unpkg.com/netlify-cms@^2.15.57/dist/netlify-cms.js"></script>
 </body>
 </html>
