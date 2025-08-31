@@ -5,6 +5,8 @@ backend:
 
 media_folder: "content/media"
 public_folder: "/content/media"
+media_library:
+  name: file_system
 
 collections:
   - name: "historias"
