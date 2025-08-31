@@ -1,0 +1,40 @@
+backend:
+  name: github
+  repo: Maria-cec/Sementinhas-Site
+  branch: main
+
+media_folder: "content/media"
+public_folder: "/content/media"
+
+collections:
+  - name: "historias"
+    label: "Histórias"
+    folder: "content/historias"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Resumo", name: "summary", widget: "text"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
+  - name: "atividades"
+    label: "Atividades"
+    folder: "content/atividades"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Descrição", name: "description", widget: "text"}
+      - {label: "Conteúdo", name: "body", widget: "markdown"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
+  - name: "recursos"
+    label: "Recursos"
+    folder: "content/recursos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Descrição", name: "description", widget: "text"}
+      - {label: "Arquivo para Download", name: "file", widget: "file"}
